@@ -49,15 +49,6 @@ li{
     margin: 0 auto;
 }
 
-/* Immagini sfondo */
-.imgs-list img{
-    width: 100%;
-    display: none;
-}
-.imgs-list img.active{
-    display: inline-block;
-}
-
 /* Icons freccie */
 .imgs-list .fa-caret-square-left, .imgs-list .fa-caret-square-right{
     font-size: 45px;
