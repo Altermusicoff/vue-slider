@@ -73,19 +73,3 @@ li{
 .imgs-list i#right-arrow{
     right: 20px;
 }
-
-/* Pallini imgs */
-.dots {
-    position: absolute;
-    z-index: 100;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-.dots i{
-    cursor: pointer;
-    transition: color 0.4s, text-shadow 0.4s;
-    font-size: 20px;
-    color: white;
-    text-shadow: 0 1px 0 black, 1px 0 0 black, -1px 0 0 black, 0 -1px 0 black;
-}
