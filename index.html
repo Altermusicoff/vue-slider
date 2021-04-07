@@ -12,7 +12,7 @@
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
     <!-- Vue -->
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
 
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/2e0cc00556.js" crossorigin="anonymous"></script>
@@ -25,6 +25,8 @@
     <main>
         <section id="app" class="slideContainer">
             <h1>{{text}}</h1>
+            <button @click='time'>START</button>
+            <button @click='stoptime'>STOP</button>
 
             <div class="imgs-list noSelect">
                 <i @click='prevImg' class="far fa-caret-square-left" id="left-arrow"></i>

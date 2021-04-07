@@ -5,7 +5,7 @@ function initVue(){
         'text': 'Alter Carousel Vue',
         'img': ['img/cabin.png', 'img/cake.png', 'img/game.png', 'img/circus.png'],
         'activeImg': 0,
-        'clock': ''
+        'clock': '',
     },
     methods:{
         nextImg: function(){
@@ -19,6 +19,12 @@ function initVue(){
             if (this.activeImg < 0){
                 this.activeImg = this.img.length -1;
             }
+        },
+        time: function(){
+            this.clock = setInterval(this.nextImg, 1000)
+        },
+        stoptime: function () {
+            this.clock = clearInterval(this.clock)
         }
     }
     })
